@@ -11,7 +11,7 @@
 <body>
     <div id="app">
         <ul>
-            <li v-for="(mail, index) in mailList">{{mail}}</li>
+            <li v-show="mailList.length > 9" v-for="(mail, index) in mailList">{{mail}}</li>
         </ul>
     </div>
     <script src="main.js"></script>
